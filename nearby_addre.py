@@ -11,7 +11,7 @@ location = geolocator.geocode(addr)
 
 address, (latitude, longitude) = geolocator.geocode(addr)
 print latitude, longitude
-url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%.7f,%.7f&radius=500&types=food&name=Biryani&key=AIzaSyDD0dXfpuFSbpGbcFr28w7-IeElAYaBOok'%(latitude,longitude)
+url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%.7f,%.7f&radius=500&types=food&name=Biryani&key=API_KEY'%(latitude,longitude)
 resp4 = urllib.urlopen(url)
 a4 =resp4.read() 
 print a4
